@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import starWarsSlice from "./starWarsSlice";
+import photosSlice from "./photosSlice";
 
 export const store = configureStore({
     reducer: {
-      starWars: starWarsSlice,
+      photosReducer: photosSlice,
     }
   }) 

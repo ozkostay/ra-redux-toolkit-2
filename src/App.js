@@ -1,12 +1,12 @@
 import './App.css';
-import StarForm from './components/StarForm';
-import StarList from './components/StarList';
+import PhotoForm from './components/PhotoForm';
+import PhotoList from './components/PhotoList';
 
 function App() {
   return (
     <div className="App">
-      <StarForm />
-      <StarList />
+      <PhotoForm />
+      <PhotoList />
     </div>
   );
 }
