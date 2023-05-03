@@ -9,7 +9,7 @@ export const photosSlice = createSlice({
   initialState,
   reducers: {
     addPhoto: (state, action) => {
-      state.photosArr.push(action.payload);
+      state.photosArr.unshift(action.payload);
     }
   }
 }) 
