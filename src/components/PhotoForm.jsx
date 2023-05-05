@@ -19,12 +19,12 @@ export default function StarForm() {
 
   function fileOnChange(e) {
     e.preventDefault();
-    setcurrentFile(e.target.files[0].name);
+    setcurrentFile(URL.createObjectURL(e.target.files[0]));
   }
 
   return <>
     <form onSubmit={(e) => fnSubmit(e)}>
-      <p>Добавление файла только из папки ./src/img/</p>
+      <p>Добавление файла</p>
         <br></br>
         <br></br>
         <input type="file" name='file' onChange={fileOnChange}></input>
